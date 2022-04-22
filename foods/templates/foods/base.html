@@ -1,0 +1,28 @@
+<!-- 부모템플릿으로 뼈대가 되는 부분은 남기고 계속 변경되어야 하는 부분은 블록으로 지정-->
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ash의 레스토랑</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href={% static 'foods/css/styles.css' %}>
+</head>
+<body>
+  <div> 
+      <!-- 블록 지정하기 -->
+      {% block date-block %}
+      {% endblock date-block %}
+  </div>
+  <hr/>
+
+  <h1>Ash의 레스토랑</h1>
+  <h2>맛있는 건 0kacl</h2>
+  
+  <div class="food-container">
+    <!-- 블록 지정하기 -->
+    {% block food-container %}
+    {% endblock food-container %}
+  </div>
+    
+</body>
+</html>

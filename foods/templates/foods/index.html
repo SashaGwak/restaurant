@@ -1,0 +1,68 @@
+<!-- base.html을 부모 템플릿으로 지정함-->
+{% extends './base.html' %}
+<!--항상 템플릿의 가장 첫줄에 나와야함 ~!!-->
+{% load static %}
+<!-- 자식템플릿에서도 static파일에 접근하기 때문에 남겨두는 것 -->
+
+{% block date-block %}
+  <div>21 April, 2022</div>
+{% endblock date-block %}
+
+{% block food-container %}
+    <div class="food">
+      <img src="/static/foods/images/chicken.jpg" width="300px" height="200px">
+      <div class="info">
+        <h3>코딩에 빠진 닭</h3>
+        <p>주머니가 가벼운 당신의<br>마음까지 생각한 가격!</p>
+        <a href="#">메뉴 보기</a>
+      </div>
+    </div>
+
+    <div class="food">
+      <img src="/static/foods/images/sushi.jpg" width="300px" height="200px">
+      <div class="info">
+        <h3>코코스시</h3>
+        <p>주머니가 가벼운 당신의<br>마음까지 생각한 가격!</p>
+        <a href="#">메뉴 보기</a>
+      </div>
+    </div>
+
+    <div class="food">
+      <img src="/static/foods/images/burger.jpg" width="300px" height="200px">
+      <div class="info">
+        <h3>코데리아</h3>
+        <p>주머니가 가벼운 당신의<br>마음까지 생각한 가격!</p>
+        <a href="#">메뉴 보기</a>
+      </div>
+    </div>
+
+
+    <div class="food">
+      <img src="/static/foods/images/bibimbap.jpg" width="300px" height="200px">
+      <div class="info">
+        <h3>코가네</h3>
+        <p>주머니가 가벼운 당신의<br>마음까지 생각한 가격!</p>
+        <a href="#">메뉴 보기</a>
+      </div>
+    </div>
+
+    <div class="food">
+      <img src="/static/foods/images/pumpkin_soup.jpg" width="300px" height="200px">
+      <div class="info">
+        <h3>단호한 호박죽</h3>
+        <p>주머니가 가벼운 당신의<br>마음까지 생각한 가격!</p>
+        <a href="#">메뉴 보기</a>
+      </div>
+    </div>
+
+    <div class="food">
+      <img src="/static/foods/images/banana.jpg" width="300px" height="200px">
+      <div class="info">
+        <h3>프루티</h3>
+        <p>주머니가 가벼운 당신의<br>마음까지 생각한 가격!</p>
+        <a href="#">메뉴 보기</a>
+      </div>
+    </div>
+{% endblock food-container %}
+
+
